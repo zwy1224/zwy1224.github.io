@@ -73,6 +73,36 @@
 <p>标识符(标识符的命名做到见名知意)<br>java标识符命名规则：<br>&nbsp;&nbsp;&nbsp;标识是由，数字，字母，下划线和美元符号构成，其他符号不可以<br>&nbsp;&nbsp;&nbsp;必须以字母，下划线和美元符号开头，不能以数字开头<br>关键字不能作为标识符<br>标识符区分大小写，理论上没有长度限制</p>
 <p>字面值<br>什么是字面值？<br>&nbsp;&nbsp;&nbsp;字面值就是可以直接看到是多少数据<br>字面值的分类<br>&nbsp;&nbsp;&nbsp;字符串，用双引号括起来的内容，例如：”monkey”<br>&nbsp;&nbsp;&nbsp;整数，所有整数，例如：1024<br>&nbsp;&nbsp;&nbsp;小数，所有小数，例如：3.14<br>&nbsp;&nbsp;&nbsp;字符，用单引号括起来的内容里面只能放单个数字，单个字母或者单个符号，例如：’a’<br>&nbsp;&nbsp;&nbsp;布尔。只有true和false</p>
 <p>变量<br>什么是变量<br>&nbsp;&nbsp;&nbsp;在程序执行过程中，在某个范围内其值可以发生改变的量<br>Java中如何定义变量(以下两种均可)<br>&nbsp;&nbsp;&nbsp;1.数据类型 变量名=变量值;<br>&nbsp;&nbsp;&nbsp;2.数据类型 变量名；<br>&nbsp;&nbsp;&nbsp;&nbsp;变量名=变量值;<br>为什么定义变量?<br>&nbsp;&nbsp;&nbsp;变量其实就是内存中的一块空间，这块空间有”类型”，”名字”，”值”。可以用来不断的存放同一类型的常量，并可以重复使用。</p>
+<p>public class VarTest01<br>{<br>    public static void main(String[]args){<br>        //数据类型 变量名 = 变量值;<br>        int a = 10; //就是告诉计算机开辟一块内存，存放int的变量，命名为a，值为10，</p>
+<pre><code>    //数据类型 变量名;
+    //变量名 = 变量值;
+    int b;
+    b = 20;
+    System.out.println(a);
+    System.out.println(a);
+    System.out.println(a);
+    System.out.println(a);
+}
+</code></pre><p>}</p>
+<p>public class VarTest02<br>{<br>    public static void main(String[]args){<br>        int a = 15;<br>        System.out.println(a);//15</p>
+<pre><code>    a = 25;
+    System.out.println(a);//25
+
+    //int a = 18;errror修改变量值的时候，不需要重新声明，在同一个域中(同一个大括号)，变量名不能重复
+
+
+    int b1,b2,b3 = 30; // 声明了int类型的三个变量b1,b2.b3，然后给b3赋值19
+    //System.out.println(b1);
+    //System.out.println(b2);
+    System.out.println(b3);
+
+}
+</code></pre><p>}</p>
+<p>java基本数据类型<br>整数型<br>&nbsp;&nbsp;&nbsp;byte 占一个字节-128到127(字节型)<br>&nbsp;&nbsp;&nbsp;short占两个字节-2^15~2^15-1&nbsp;&nbsp;&nbsp;-32768~32767(短整型)<br>&nbsp;&nbsp;&nbsp;int占四个字节-2^31~2^31-1&nbsp;&nbsp;&nbsp;-2147483648~2147483648(整型)<br>&nbsp;&nbsp;&nbsp;long占八个字节-2^63~2^63-1(长整型)</p>
+<p>浮点型<br>&nbsp;&nbsp;&nbsp;float占四个字节-3.403E38~3.403E38单精度<br>&nbsp;&nbsp;&nbsp;double占八个字节-1.798E308~1.798E308双精度</p>
+<p>字符型<br>&nbsp;&nbsp;&nbsp;char占两个字节0~65535</p>
+<p>布尔型<br>&nbsp;&nbsp;&nbsp;boolean<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;true和false</p>
+<p>print和println的区别<br>&nbsp;&nbsp;&nbsp;println会自动换行</p>
 
  
                 <!-- Meta -->
@@ -88,7 +118,7 @@
                         
                     </div>
                     <div class="post-date">
-                        2019 年 03 月 30 日
+                        2019 年 03 月 31 日
                     </div>
                 </div>
             </div>
